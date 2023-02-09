@@ -3,6 +3,7 @@ package org.example;
 import java.util.HashMap;
 import java.util.Scanner;
 import java.util.logging.Logger;
+import java.util.Map;
 
 public class Hashmap {
     private static final Logger log = Logger.getLogger("InfoLogging");
@@ -44,7 +45,7 @@ public class Hashmap {
             log.info(y);
         }
         log.info("Printing all keys with vaules");
-        for (Integer z : studentdatabase.keySet()) {
+        for (Map.Entry<Integer, String> z : studentdatabase.entrySet()) {
             String z1="key: " + z + " value: " + studentdatabase.get(z);
             log.info(z1);
         }
